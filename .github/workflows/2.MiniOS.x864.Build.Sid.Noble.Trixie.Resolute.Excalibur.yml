@@ -11,7 +11,7 @@ env:
   MainDir: /builder
 
   BuildDL: https://github.com/1ComputerPK/minios/releases/download/dl/MiniOS.Build.10.10.2026.tar.xz
-  BuildSource: zMiniOS.Build.10.10.2026.tar.xz
+  BuildSource: MiniOS.Build.10.10.2026.tar.xz
   BuildDir: MiniOS.Build.2026
   BaseVersion: Lastest
   CustomVersion: SkyLine Edition 2026 LXFice
