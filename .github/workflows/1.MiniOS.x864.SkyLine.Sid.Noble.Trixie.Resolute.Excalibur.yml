@@ -10,10 +10,10 @@ env:
   iMageSize: 50GiB
   MainDir: /builder
 
+  BaseBuild: https://github.com/minios-linux/minios-live.git
   BuildDL: https://github.com/1ComputerPK/minios/releases/download/dl/MiniOS.SkyLine.10.10.2026.tar.xz
   BuildSource: MiniOS.SkyLine.10.10.2026.tar.xz
   BuildDir: MiniOS.SkyLine.2026
-  BaseVersion: https://github.com/minios-linux/minios-live.git
   CustomVersion: SkyLine Edition 2026 LXFice
   FirefoxDir: linux-live/scripts/03-gui-base/rootcopy-postinstall/opt/
   FirefoxURL: https://ftp.mozilla.org/pub/firefox/releases/140.17.0esr/${ARCH}/en-US/firefox-140.17.0esr.tar.xz
@@ -60,7 +60,7 @@ jobs:
         working-directory: /builder
         run: |
           git clone --depth 1 --single-branch --no-tags \
-           ${{ env.BaseVersion }} ${{ env.BuildDir }}
+           ${{ env.BaseBuild }} ${{ env.BuildDir }}
           wget -nv "${{ env.BuildDL }}"
           tar -xf "${{ env.BuildSource }}"
 
