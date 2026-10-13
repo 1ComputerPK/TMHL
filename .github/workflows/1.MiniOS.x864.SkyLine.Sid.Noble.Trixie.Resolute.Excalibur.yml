@@ -66,7 +66,7 @@ jobs:
           if [ "${{ matrix.arch }}" = "amd64" ]; then
             FFURL="https://download.mozilla.org/?product=firefox-esr-latest&os=linux64&lang=en-US"
           else
-            FFURL="https://download.mozilla.org/?product=firefox-esr-latest&os=linux&lang=en-US"
+            FFURL="https://ftp.mozilla.org/pub/firefox/releases/140.17.0esr/linux-i686/en-US/firefox-140.17.0esr.tar.xz"
           fi
 
           Target2OPT="/builder/${{ env.BuildDir }}/${{ env.FirefoxDir }}"
