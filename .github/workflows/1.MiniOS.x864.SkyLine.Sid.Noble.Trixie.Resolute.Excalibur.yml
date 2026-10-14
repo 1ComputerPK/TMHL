@@ -10,7 +10,7 @@ env:
   iMageSize: 50GiB
   MainDir: /builder
 
-  BaseBuild: https://github.com/minios-linux/minios-live.git
+  BaseBuild: https://github.com/1ComputerPK/minios.git
   BuildDL: https://github.com/1ComputerPK/minios/releases/download/dl/MiniOS.SkyLine.10.10.2026.tar.xz
   BuildSource: MiniOS.SkyLine.10.10.2026.tar.xz
   BuildDir: MiniOS.SkyLine.2026
